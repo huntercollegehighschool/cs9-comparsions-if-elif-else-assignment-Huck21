@@ -21,5 +21,14 @@ Enter a month:  February
 Enter a month:  Saturday
 not a month
 '''
-
+# Use if...elif and group months by number of days to find how many days in a given month
 #start writing your code below
+month = input("Enter a month: ")
+if month in ("February", "february"):
+	print("28 or 29")
+elif month in ("April", "april", "June", "june", "September", "september", "November", "november"):
+  print("30")
+elif month in ("January", "january", "March", "march", "May", "may", "July", "july", "August", "august", "October", "october", "December", "december"):
+  print("31")
+else:
+  print("Not a month")
